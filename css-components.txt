@@ -1,0 +1,36 @@
+Three ways of implementing css in a html file:
+1.inline css - by using the style attritube inside HTML elements.
+    eg. <h1 style="color:blue"> hello </h1>
+
+2. Internal css - by using <style> tag inside the head section.
+    eg. <head>
+            <title>internal styling</title>
+            <style>
+                body{
+                    color:red;
+                }
+                p{
+                    color:blue;
+                }
+            </style>
+        </head>
+
+3. External css - by using <link> tag inside head section to link to a external css file.
+    eg. (style.css) -->
+    
+    #css selector
+
+    -->for any element or tag:
+    body {
+        color:blue;
+    }
+
+    -->for id attribute:
+    #id-name {
+        color:yellow;
+    }
+
+    -->for classname attribute:
+    .class-name {
+        color:pink;
+    }
