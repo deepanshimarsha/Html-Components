@@ -1,4 +1,5 @@
 Three ways of implementing css in a html file:
+----------------------------------------------
 1.inline css - by using the style attritube inside HTML elements.
     eg. <h1 style="color:blue"> hello </h1>
 
@@ -34,3 +35,41 @@ Three ways of implementing css in a html file:
     .class-name {
         color:pink;
     }
+
+CSS box model:
+---------------
+
+css box model is a box that wraps around every elements. it consist of content, padding, border and margin.
+                         ____________________________________    
+                        |             margin                 |
+                        |                                    |
+                        |    __________________________      |        
+                        |    |         border          |     |
+                        |    |                         |     |
+                        |    |    _________________    |     |
+                        |    |   |    padding      |   |     |
+                        |    |   |    _________    |   |     |
+                        |    |   |   | content |   |   |     |
+                        |    |   |   | ________|   |   |     |      
+                        |    |   |_________________|   |     |
+                        |    |_________________________|     |
+                        |____________________________________|
+
+eg:
+
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+CSS units:
+----------
+--> absolute unit - fixed and do not change (not recommended for use on screen)
+    (cm, mm, in, px*, pt, pc)
+
+--> relative lenths - length relative to another length property.
+    1. rem - relative to font size
+    2. 
+
