@@ -73,3 +73,9 @@ CSS units:
     1. rem - relative to font size
     2. 
 
+CSS Variables:
+--------------
+
+--> variables that holds custom properties that can be used in multiple other places inside a var() function. The name of the variable begins with double hyphen (--).
+ 
+

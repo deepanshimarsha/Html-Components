@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,99 +8,113 @@
     <title>Component Library</title>
     <link href="styles.css" rel="stylesheet" />
 </head>
+
 <body>
     <h2>@typography</h2>
     <h1> this is a heading</h1>
     <p>this is a paragraph</p>
     <small> this is small text</small>
+    <p>All the content inside the body has <strong>Montesserat</strong> font style</p>
 
     <hr>
 
     <h2>@container</h2>
 
-    <h3>this is fluid container</h3>
-    <div class="container">this will cover end to end</div>
+    <h3>this is fluid container.</h3>
+    <p>it has a little bit of padding from left and right</p>
+    <div class="container">this will cover end to end meaning it will wrap at the end of the screen.if i write a big
+        sentence that will go across the end of the screen you will get a better understanding. still bnot big enough.
+        lets just keep on writing. here it is, it wraps around at the end as you can see.</div>
 
     <h3>this is center container</h3>
-    <div class="container container-center">this will be at the center</div>
+    <p>it has a little bit of padding from left and right</p>
+    <div class="container container-center">this will be at the center. suppose if i write this sentence it will not
+        wrap around at teh end instead it will wrap around at the maximum width.</div>
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="\">primary link</a>
-    <a href="\">secondary link</a>
+    <a class="link link-primary" href="\">primary link</a>
+    <a class="link link-secondary" href="\">secondary link</a>
 
     <hr>
 
     <h2>@lists</h2>
 
     <h3>this is unordered list</h3>
-    <ul>
+    <p>this list will not have bullet points</p>
+    <ul class="list-non-bullet">
         <li>first item</li>
         <li>second item</li>
         <li>third item</li>
     </ul>
-    
+
     <h3>this is inline unordered list</h3>
-    <ul>
-        <li>first</li>
-        <li>second</li>
-        <li>third</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">inline item first</li>
+        <li class="list-item-inline">inline item second</li>
+        <li class="list-item-inline">inline item third</li>
     </ul>
 
     <h3>this is reverse ordered lists</h3>
-    <ol>
-        <li>third</li>
-        <li>second</li>
-        <li>first</li>
+    <ol reversed>
+        <li>third item</li>
+        <li>second item</li>
+        <li>first item</li>
     </ol>
     <hr>
 
     <h2>@navbar</h2>
-    <nav>
-        <h3>BRAND NAME</h3>
-        <h3>inline list of links</h3>
-        <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="/">projects</a></li>
-            <li><a href="/">blog</a></li>
+    <nav class="navigation container">
+        <h3 class="nav-brand">iAmBrand</h3>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a class="link link-active" href="/">home</a></li>
+            <li class="list-item-inline"><a class="link" href="/">projects</a></li>
+            <li class="list-item-inline"><a class="link" href="/">blog</a></li>
         </ul>
     </nav>
     <hr>
 
     <h2>@header</h2>
-    <header>
-        <h3>header image</h3>
-        <img src="images/hero-image.svg"/>
-        <h3>header heading</h3>
+    <header class="hero">
+        <img class="hero-img" src="images/hero-image.svg" />
+        <h1 class="hero-heading">header heading</h3>
     </header>
 
     <hr>
 
 
     <h2>@section</h2>
-    <h3>this is normal section</h3>
-    <section>this will have white background</section>
+    <section class="section">
+        <div class="container-center">
+            <h1>white section</h1>
+            <p>this will have white background</p>
+        </div>
 
-    <h3>this is off-white section</h3>
-    <section>this will have grey background</section>
+    </section>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>off-white section</h1>
+            <p>this will have grey background</p>
+        </div>
+
+    </section>
 
     <hr>
-    
-    <h2>@footer</h2>
-    <footer>
-        <h3>some centered text</h3>
 
-        <h3>centered inline lists</h3>
-        <ul>
-            <li><a href="/">social media 1</a></li>
-            <li><a href="/">social media 2</a></li>
+    <h2>@footer</h2>
+    <footer class="footer">
+        <div class="footer-header">some small heading inside footer</div>
+        <ul class="list-non-bullet social-links">
+            <li class="list-item-inline"><a class="link" href="/">social media 1</a></li>
+            <li class="list-item-inline"><a class="link" href="/">social media 2</a></li>
         </ul>
 
     </footer>
 
 
-    
+
 </body>
+
 </html>
